@@ -1,0 +1,113 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": {
+            "a": "Berlin",
+            "b": "Madrid",
+            "c": "Rome",
+            "d": "Paris"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Paris_-_The_Eiffel_Tower_in_spring_-_2307.jpg"
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "options": {
+            "a": "Earth",
+            "b": "Mars",
+            "c": "Venus",
+            "d": "Jupiter"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg"
+
+    },
+    {
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "options": {
+            "a": "F. Scott Fitzgerald",
+            "b": "Ernest Hemingway",
+            "c": "Mark Twain",
+            "d": "Harper Lee"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg"
+    },
+    {
+        "question": "What is the chemical symbol for water?",
+        "options": {
+            "a": "O2",
+            "b": "H2",
+            "c": "CO2",
+            "d": "H2O"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Water_drop_001.jpg"
+    },
+    {
+        "question": "Who painted the Mona Lisa?",
+        "options": {
+            "a": "Vincent van Gogh",
+            "b": "Pablo Picasso",
+            "c": "Claude Monet",
+            "d": "Leonardo da Vinci"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Mona_Lisa.jpg"
+    },
+    {
+        "question": "What is the smallest prime number?",
+        "options": {
+            "a": "0",
+            "b": "1",
+            "c": "4",
+            "d": "2"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Numbers_grid_in_NY.jpg"
+    },
+    {
+        "question": "What is the main ingredient in guacamole?",
+        "options": {
+            "a": "Tomato",
+            "b": "Onion",
+            "c": "Pepper",
+            "d": "Avocado"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Guacamole-dip-nachos-openclipart-j4p4n-321378.svg"
+    },
+    {
+        "question": "What is the hardest natural substance on Earth?",
+        "options": {
+            "a": "Gold",
+            "b": "Iron",
+            "c": "Silver",
+            "d": "Diamond"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Periodic_table_large.svg"
+    },
+    {
+        "question": "What is the square root of 64?",
+        "options": {
+            "a": "6",
+            "b": "7",
+            "c": "9",
+            "d": "8"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Racine_carr%C3%A9e_bleue.svg"
+    },
+    {
+        "question": "Who is known as the 'Father of Computers'?",
+        "options": {
+            "a": "Thomas Edison",
+            "b": "Nikola Tesla",
+            "c": "Albert Einstein",
+            "d": "Charles Babbage"
+        },
+        "correct_answer": "d",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Charles_Babbage_-_1860.jpg"
+    }
+]
