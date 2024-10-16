@@ -6,11 +6,11 @@ const clients = new Map();
 wss.on("connection", (ws) => {
     console.log("Client connected");
 
-    // Generate a unique ID for the client (you can also use something more sophisticated)
+    
     const clientId = Date.now();
     clients.set(clientId, ws);
 
-    // Broadcast new client connection
+
     ws.on("message", (message) => {
         try {
             const data = JSON.parse(message);
