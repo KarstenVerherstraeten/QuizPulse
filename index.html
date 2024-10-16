@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer type="module" src="/userHandler.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="queue.js"></script>
     <title>Quizpulse</title>
 </head>
 <body>
     <h1>Quizpulse</h1>
     <p>Quizpulse is a quiz app that allows you to create and take quizzes.</p>
 
-<!-- user image extra -->
 
-<form id="addUser" action="">
-    <input type="text" name="username" id="username" placeholder="Username..">
-    <button>Enter</button>
-</form>
+    <form id="addUser" action="">
+        <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username.."
+        />
+        <button type="submit">Enter</button>
+    </form>
+
+    <h2>Connected Users:</h2>
+    <ul id="userList">
+
+    </ul>
 </body>
 </html>
