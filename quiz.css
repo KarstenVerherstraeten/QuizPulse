@@ -1,71 +1,69 @@
-img{
-    width: 400px;
-    height: 400px;
+img {
+	width: 400px;
+	height: 400px;
 }
 
-.question{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.question {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "Arial", sans-serif;
+	font-size: 24px;
+	color: #333;
 }
 
-.answers{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-
-   
-
+.answers {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
 }
-
 
 /* answer buttons */
-.answer-option:nth-child(1){
-    color: white;
-    width: 200px;
-    height: 200px;
-    font-size: 25px;
-    background-color: rgb(90, 184, 95);
-    margin-right: 20px;
-    border-style: none;
-    padding: 20px 20px;
-    border-radius: 5px;
+.answer-option:nth-child(1) {
+	color: white;
+	width: 200px;
+	height: 200px;
+	font-size: 25px;
+	background-color: rgb(90, 184, 95);
+	margin-right: 20px;
+	border-style: none;
+	padding: 20px 20px;
+	border-radius: 5px;
 }
 
-.answer-option:nth-child(2){
-    color: white;
-    width: 200px;
-    height: 200px;
-    font-size: 25px;
-    background-color: coral;
-    margin-right: 20px;
-    border-style: none;
-    padding: 20px 20px;
-    border-radius: 5px;
+.answer-option:nth-child(2) {
+	color: white;
+	width: 200px;
+	height: 200px;
+	font-size: 25px;
+	background-color: coral;
+	margin-right: 20px;
+	border-style: none;
+	padding: 20px 20px;
+	border-radius: 5px;
 }
 
-.answer-option:nth-child(3){
-    color: white;
-    width: 200px;
-    height: 200px;
-    font-size: 25px;
-    background-color: lightgreen;
-    margin-right: 20px;
-    border-style: none;
-    padding: 20px 20px;
-    border-radius: 5px;
+.answer-option:nth-child(3) {
+	color: white;
+	width: 200px;
+	height: 200px;
+	font-size: 25px;
+	background-color: lightgreen;
+	margin-right: 20px;
+	border-style: none;
+	padding: 20px 20px;
+	border-radius: 5px;
 }
 
-.answer-option:nth-child(4){
-    color: white;
-    width: 200px;
-    height: 200px;
-    font-size: 25px;
-    background-color: lightpink;
-    margin-right: 20px;
-    border-style: none;
-    padding: 20px 20px;
-    border-radius: 5px;
+.answer-option:nth-child(4) {
+	color: white;
+	width: 200px;
+	height: 200px;
+	font-size: 25px;
+	background-color: lightpink;
+	margin-right: 20px;
+	border-style: none;
+	padding: 20px 20px;
+	border-radius: 5px;
 }
-
