@@ -40,3 +40,7 @@ fetch("questions.json")
         });
     }
 );
+
+
+// ws send the selected question to the client
+
