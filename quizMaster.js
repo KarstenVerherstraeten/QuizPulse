@@ -19,7 +19,9 @@ function handleQuizmasterSelection(index) {
     quizmasterSocket.send(
         JSON.stringify({ 
             type: "questions", 
-            questions: selectedQuestion.question 
+            questions: selectedQuestion.question,
+			options: selectedQuestion.options,
+			correctAnswer: selectedQuestion.correct_answer
         })
     );
     console.log("Question sent to the server");
@@ -53,6 +55,7 @@ fetch("questions.json")
 quizmasterSocket.onopen = () => {
 	console.log("quizmaster WebSocket connection opened.");
 };
+
 
 quizmasterSocket.onclose = () => {
 	console.log("Chat WebSocket connection closed.");
