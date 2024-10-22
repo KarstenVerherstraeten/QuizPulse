@@ -40,20 +40,21 @@ wss.on("connection", (ws, req) => {
       }
 
       if (data.type === "questions") {
-        const question = data.questions;
-        const options = data.options;
-        const correctAnswer = data.correctAnswer;
-        console.log("Question received from quizmaster:", question, options, correctAnswer);
-    
-        // Broadcast the questions to all clients of type 'quiz'
-        const broadcastData = JSON.stringify({ type: "questions", question, options, correctAnswer });
+        const questionData = data.questionData; // Get the full question object
+        console.log("Question received from quizmaster:", questionData);
+        
+        // Broadcast the question data to all clients of type 'quiz'
+        const broadcastData = JSON.stringify({ 
+            type: "questions", 
+            questionData: questionData  // Broadcast the whole object
+        });
         
         clients["quiz"].forEach((clientWs) => {
             if (clientWs.readyState === ws.OPEN) {
                 clientWs.send(broadcastData);
             }
         });
-    
+        
         console.log("Questions broadcasted to quiz clients");
     }
     } catch (e) {
