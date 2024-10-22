@@ -40,11 +40,13 @@ wss.on("connection", (ws, req) => {
       }
 
       if (data.type === "questions") {
-        const questions = data.questions;
-        console.log("Questions received from quizmaster:", questions);
+        const question = data.questions;
+        const options = data.options;
+        const correctAnswer = data.correctAnswer;
+        console.log("Question received from quizmaster:", question, options, correctAnswer);
     
         // Broadcast the questions to all clients of type 'quiz'
-        const broadcastData = JSON.stringify({ type: "questions", questions });
+        const broadcastData = JSON.stringify({ type: "questions", question, options, correctAnswer });
         
         clients["quiz"].forEach((clientWs) => {
             if (clientWs.readyState === ws.OPEN) {
