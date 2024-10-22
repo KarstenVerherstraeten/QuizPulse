@@ -42,6 +42,17 @@ wss.on("connection", (ws, req) => {
       if (data.type === "questions") {
         const questions = data.questions;
         console.log("Questions received from quizmaster:", questions);
+    
+        // Broadcast the questions to all clients of type 'quiz'
+        const broadcastData = JSON.stringify({ type: "questions", questions });
+        
+        clients["quiz"].forEach((clientWs) => {
+            if (clientWs.readyState === ws.OPEN) {
+                clientWs.send(broadcastData);
+            }
+        });
+    
+        console.log("Questions broadcasted to quiz clients");
     }
     } catch (e) {
       console.log("Error parsing message:", e.message);
