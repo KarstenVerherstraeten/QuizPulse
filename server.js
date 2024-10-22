@@ -4,6 +4,7 @@ const wss = new WebSocketServer({ port: 8080 });
 const clients = {
   chat: [],
   quiz: [],
+  quizmaster: [],
 };
 
 wss.on("connection", (ws, req) => {
@@ -37,6 +38,11 @@ wss.on("connection", (ws, req) => {
 
         console.log("Broadcasted user:", username);
       }
+
+      if (data.type === "questions") {
+        const questions = data.questions;
+        console.log("Questions received from quizmaster:", questions);
+    }
     } catch (e) {
       console.log("Error parsing message:", e.message);
     }
