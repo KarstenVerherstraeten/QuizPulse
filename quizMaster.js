@@ -16,12 +16,11 @@ function handleQuizmasterSelection(index) {
     askedQuestions.push(selectedQuestion);
     console.log(`The selected question is: ${selectedQuestion.question}`);
 
+    // Send the entire question object
     quizmasterSocket.send(
         JSON.stringify({ 
             type: "questions", 
-            questions: selectedQuestion.question,
-			options: selectedQuestion.options,
-			correctAnswer: selectedQuestion.correct_answer
+            questionData: selectedQuestion  // Send the whole object
         })
     );
     console.log("Question sent to the server");
