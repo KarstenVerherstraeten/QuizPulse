@@ -30,7 +30,8 @@ function handleQuizmasterSelection(index) {
             type: "questions",
             questionData: {
                 question: selectedQuestion.question,
-                options: optionsArray // Send structured options
+                options: optionsArray, // Send structured options
+                image: selectedQuestion.image
             }
         })
     );
