@@ -54,10 +54,6 @@ quizmasterSocket.onopen = () => {
 	console.log("quizmaster WebSocket connection opened.");
 };
 
-quizmasterSocket.onmessage = (event) => {
-	console.log("question submitted succesfully:", event.data);
-};
-
 quizmasterSocket.onclose = () => {
 	console.log("Chat WebSocket connection closed.");
 };
