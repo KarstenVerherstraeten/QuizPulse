@@ -92,7 +92,7 @@ function enableButtons() {
 function fetchNewQuestionsIfNeeded() {
     // If we have less than 3 selected questions, fetch new ones
     if (selectedQuestions.length < 3) {
-        fetch("/questions.json")
+        fetch("/scripts/questions.json")
             .then((response) => response.json())
             .then((data) => {
                 let shuffledQuestions = shuffleArray(data);
@@ -128,7 +128,7 @@ function updateQuestionContainer() {
 window.handleQuizmasterSelection = handleQuizmasterSelection;
 
 // Initial fetch of questions
-fetch("questions.json")
+fetch("/scripts/questions.json")
     .then((response) => response.json())
     .then((data) => {
         let shuffledQuestions = shuffleArray(data);
