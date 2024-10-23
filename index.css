@@ -17,6 +17,10 @@ body {
     align-items: center;
 }
 
+img {
+    width: 200px;
+    margin-bottom: 20px;
+}
 h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -35,23 +39,11 @@ p {
 
 .roleSelector {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     gap: 20px;
     max-width: 400px;
     margin: 0 auto;
-}
-
-.roleSelector div {
-    background-color: #16213e;
-    border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    padding: 25px;
-    transition: background-color 0.4s ease, transform 0.3s ease;
-}
-
-.roleSelector div:hover {
-    background-color: #0f3460;
-    transform: translateY(-5px);
 }
 
 button {
@@ -60,6 +52,7 @@ button {
     color: white;
     padding: 15px 30px;
     font-size: 1.2rem;
+    width: 170px;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;

@@ -50,7 +50,7 @@ function disableButtonsAndShowProgressBar() {
 
     document.querySelector('#selectedQuestion').innerHTML = ""; 
 
-    document.querySelector('#selectedQuestion').insertAdjacentHTML("beforeend",`<h2>Your selected question is: ${currentQuestion[0].question}</h2>`); 
+    document.querySelector('#selectedQuestion').insertAdjacentHTML("beforeend",`<h2>Your selected question is: <br> ${currentQuestion[0].question}</h2>`); 
     document.querySelector('#selectedQuestion').style.display = "block"; // Corrected this line
 
     // Create and display a progress bar

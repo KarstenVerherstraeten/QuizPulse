@@ -6,22 +6,29 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #1a1a2e;
+    color: #eaeaea;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #4a90e2;
+    color: #ff4c60;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 30px;
-    color: #666;
+    color: #eaeaea;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .question {
@@ -68,56 +75,68 @@ img {
     color: #333;
 }
 
+#quiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#answers{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
 /* Answer buttons */
 button {
-    background-color: #4a90e2; /* Default color */
+    background-color: #ff4c60;
+    border: none;
     color: white;
-    width: 180px;
-    height: 180px;
-    font-size: 22px;
-    border: none; /* Corrected to 'none' from 'none;' */
-    padding: 15px;
-    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    width: 170px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    transform: scale(1.05);
+    background-color: #ff6b81;
+    box-shadow: 0 8px 15px rgba(255, 108, 133, 0.3);
 }
-
 button:nth-child(1) {
-    background-color: #5ab85f;
+    background-color: #3a86ff; /* Deep blue */
 }
 
 button:nth-child(2) {
-    background-color: coral;
+    background-color: #8338ec; /* Purple */
 }
 
 button:nth-child(3) {
-    background-color: lightgreen;
+    background-color: #ff006e; /* Neon pink */
 }
 
 button:nth-child(4) {
-    background-color: lightpink;
+    background-color: #fb5607; /* Bright orange */
 }
 
 .progress-bar-container {
-    width: 100%;
+    width: 50%;
     height: 20px;
-    background-color: #e0e0e0;
+    background-color: #4a4a6a;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
     position: relative;
     overflow: hidden;
 }
 
 .progress-bar {
     height: 100%;
-    background-color: #76c7c0;
-    width: 0; /* Start with 0% width */
-    transition: width 1s linear; /* Smooth transition for the width change */
+    background-color: #ff4c60;
+    width: 0;
+    transition: width 1s linear;
 }
 
 @media (max-width: 768px) {
