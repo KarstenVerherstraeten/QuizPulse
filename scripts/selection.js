@@ -6,11 +6,11 @@ queueSocket.onopen = function() {
 
 
 document.querySelector('#quizmaster').addEventListener('click', function() {
-    window.location.href = "quizmaster.html";
+    window.location.href = "/pages/quizmaster.html";
     console.log("Quizmaster clicked");
 });
 
 document.querySelector('#player').addEventListener('click', function() {
-    window.location.href = "question.html";
+    window.location.href = "/pages/question.html";
     console.log("Player clicked");
 });

@@ -92,7 +92,7 @@ function enableButtons() {
 function fetchNewQuestionsIfNeeded() {
     // If we have less than 3 selected questions, fetch new ones
     if (selectedQuestions.length < 3) {
-        fetch("questions.json")
+        fetch("/questions.json")
             .then((response) => response.json())
             .then((data) => {
                 let shuffledQuestions = shuffleArray(data);
