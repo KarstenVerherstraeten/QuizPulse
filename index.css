@@ -80,17 +80,43 @@ button:hover {
     transition: width 1s linear;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
 
     p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     button {
-        padding: 12px 24px;
+        padding: 10px 20px;
         font-size: 1rem;
     }
+    
 }
+
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .roleSelector {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+
+
