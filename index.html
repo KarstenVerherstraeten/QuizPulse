@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer type="module" src="queue.js"></script>
+    <script defer type="module" src="selection.js"></script>
+    <link rel="stylesheet" href="index.css" />
     <title>Quizpulse</title>
 </head>
 <body>
@@ -11,7 +12,19 @@
     <p>Quizpulse is a quiz app that allows you to create and take quizzes.</p>
 
 
-    <form id="addUser" action="">
+    <div class="roleSelector">
+        <div>
+            <button id="quizmaster" value="quizmaster">Quizmaster</button>
+        </div>
+        
+        <div>
+            <button id="player" value="player">Player</button>
+        </div>
+       
+    </div>
+
+
+    <!-- <form id="addUser" action="">
         <input
             type="text"
             name="username"
@@ -24,6 +37,6 @@
     <h2>Connected Users:</h2>
     <ul id="userList">
 
-    </ul>
+    </ul> -->
 </body>
 </html>

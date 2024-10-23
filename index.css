@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ff4c60;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #eaeaea;
+    max-width: 600px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.roleSelector {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.roleSelector div {
+    background-color: #16213e;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.roleSelector div:hover {
+    background-color: #0f3460;
+    transform: translateY(-5px);
+}
+
+button {
+    background-color: #ff4c60;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6b81;
+    box-shadow: 0 8px 15px rgba(255, 108, 133, 0.3);
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #4a4a6a;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #76c7c0;
+    width: 0;
+    transition: width 1s linear;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
