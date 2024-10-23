@@ -54,13 +54,17 @@ function disableButtonsAndShowProgressBar() {
     document.querySelector('#selectedQuestion').style.display = "block"; // Corrected this line
 
     // Create and display a progress bar
+    let progressBarOuterContainer = document.createElement("div");
+    progressBarOuterContainer.classList.add("progress-bar-outer-container");
+
     let progressBarContainer = document.createElement("div");
     progressBarContainer.classList.add("progress-bar-container");
 
     let progressBar = document.createElement("div");
     progressBar.classList.add("progress-bar");
     progressBarContainer.appendChild(progressBar);
-    document.body.appendChild(progressBarContainer);
+    progressBarOuterContainer.appendChild(progressBarContainer);
+    document.body.appendChild(progressBarOuterContainer);
 
     let timeLeft = 15;
     let interval = setInterval(() => {
@@ -68,7 +72,7 @@ function disableButtonsAndShowProgressBar() {
         progressBar.style.width = `${(15 - timeLeft) * (100 / 15)}%`;
         if (timeLeft <= 0) {
             clearInterval(interval);
-            document.body.removeChild(progressBarContainer);
+            document.body.removeChild(progressBarOuterContainer);
             // Enable buttons after the time is up
             enableButtons();
             currentQuestion.splice(0, 1); // Remove the displayed question

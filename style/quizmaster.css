@@ -10,10 +10,6 @@ body {
     color: #eaeaea;
     padding: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
@@ -36,6 +32,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
     margin: 0 auto;
 }
@@ -80,6 +77,10 @@ button:hover {
 }
 
 
+.progress-bar-outer-container{
+    display: flex;
+    justify-content: center;
+}
 
 .progress-bar-container {
     width: 50%;
@@ -98,16 +99,22 @@ button:hover {
     transition: width 1s linear;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 2rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     button {
         padding: 8px 16px;
     }
+
+    .question-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
