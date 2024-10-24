@@ -1,4 +1,4 @@
-const quizmasterSocket = new WebSocket("ws://localhost:8080?client=quizmaster");
+const quizmasterSocket = new WebSocket("wss://quizpulse.onrender.com?client=quizmaster");
 
 let askedQuestions = [];
 let selectedQuestions = [];

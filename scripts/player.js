@@ -1,4 +1,4 @@
-const quizSocket = new WebSocket("ws://localhost:8080?client=quiz");
+const quizSocket = new WebSocket("wss://quizpulse.onrender.com?client=quiz");
 
 let question = "wait for the quizmaster to send a question";
 let options = [];

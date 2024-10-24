@@ -1,4 +1,4 @@
-const queueSocket = new WebSocket("ws://localhost:8080?client=queue");
+const queueSocket = new WebSocket("wss://quizpulse.onrender.com?client=queue");
 
 queueSocket.onopen = function() {
     console.log("Connected to queue");
